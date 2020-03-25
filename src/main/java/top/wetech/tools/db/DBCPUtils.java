@@ -13,6 +13,17 @@ import java.util.*;
  * User: chenzuoli
  * Date: 2018/4/27 10:52
  * Description: 传递jdbc连接参数，加载数据库连接池工具类
+ *
+ * 基本参数：
+ * username:用户名
+ * password:密码
+ * url:连接url
+ * driverClassName:驱动名
+ * maxActive:最大并发连接数
+ * maxIdle:最大空闲数
+ * minIdle:最小空闲数（理论上无效）
+ * initialSize:初始化连接数
+ * maxWait:建立连接过程最大的等待时间，超时报错
  */
 public class DBCPUtils implements Serializable {
     private static Logger logger = Logger.getLogger(DBCPUtils.class);
